@@ -13,3 +13,7 @@ label.tp-label {
 .ui-datepicker-next span {
 	color: #000;
 }
+
+.postbox select{
+	width: 200px;
+}

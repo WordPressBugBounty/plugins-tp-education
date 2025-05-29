@@ -3,11 +3,11 @@
  * Plugin Name: TP Education
  * Plugin URI: https://www.themepalace.com/plugins/tp_education
  * Description: A plugin to add custom post type ( Events, Courses, Classes, Excursions, Team, Testimonial, Affiliation ) and it's required meta fields for educational sites. This plugin is dedicated for educational themes.
- * Version: 4.5
+ * Version: 4.6
  * Author: Theme Palace
  * Author URI: https://themepalace.com
  * Requires at least: 4.7
- * Tested up to: 6.2
+ * Tested up to: 6.8
  * Requires PHP : 5.6
  * Text Domain: tp-education
  * Domain Path: /languages/

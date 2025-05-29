@@ -141,7 +141,10 @@ class TP_Education_Course_Metabox {
                 );
             $posts = get_posts( $args );
             foreach ( $posts as $post ) {
-                $selected = in_array( absint( $post->ID ), $course_counselors ) ? 'selected' : '';
+                $selected = '';
+                if( is_array( $course_counselors ) ){
+                    $selected = in_array( absint( $post->ID ), $course_counselors ) ? 'selected' : '';
+                }
                 echo '<option value="' . absint( $post->ID ) . '" ' . $selected . '>' . esc_html( $post->post_title ) . '</option>';
             }
             ?>

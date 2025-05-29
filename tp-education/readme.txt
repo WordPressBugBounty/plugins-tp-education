@@ -4,8 +4,8 @@ Tags: Custom Post Type, Meta data, Education
 Donate link: http://themepalace.com
 Requires PHP: 5.6
 Requires at least: 4.7
-Tested up to: 6.2
-Stable tag: 4.5
+Tested up to: 6.8
+Stable tag: 4.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -277,6 +277,10 @@ Enhance your educational sites more efficiently. Allow user to utilize post type
 
 
 == Changelog ==
+
+= 4.6 May 29, 2025 =
+* Added a condition to ensure $team_cources is an array before using in_array() in the course selection dropdown for team members.
+* Added a condition to ensure $course_counselors is an array before using in_array() in the counselors selection dropdown for cources.
 
 = 4.5 April 27, 2023 =
 * Fixed attribute escaping issue for all shortcode

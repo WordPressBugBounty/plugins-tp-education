@@ -81,7 +81,7 @@ class TP_Education_Team_Metabox {
 
         <hr>
 
-         <label class="tp-label" for="tp_team_courses_value"><?php _e( 'Courses', 'tp-education' ); ?>: </label><br>
+        <label class="tp-label" for="tp_team_courses_value"><?php _e( 'Courses', 'tp-education' ); ?>: </label><br>
         <select name="tp_team_courses_value[]" id="team_courses_id" multiple>
             <option value=""><?php _e( 'None', 'tp-education' ); ?></option>
             <?php
@@ -93,7 +93,11 @@ class TP_Education_Team_Metabox {
                 );
             $posts = get_posts( $args );
             foreach ( $posts as $post ) {
-                $selected = in_array( absint( $post->ID ), $team_cources ) ? 'selected' : '';
+                $selected = '';
+                if( is_array( $team_cources ) ){
+                    $selected = in_array( absint( $post->ID ), $team_cources ) ? 'selected' : '';
+                }
+                
                 echo '<option value="' . absint( $post->ID ) . '" ' . $selected . '>' . esc_html( $post->post_title ) . '</option>';
             }
             ?>
